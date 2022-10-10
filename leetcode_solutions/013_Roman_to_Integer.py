@@ -33,3 +33,13 @@ class Solution:
         output_num += next_s 
         
         return output_num
+
+"""
+Problem: https://leetcode.com/problems/roman-to-integer/
+
+Idea: Important to understand that, if the next character is  
+
+1. Loop over nums and save the results in a hashtable with value as key (I choosed to save the residual from the target, but does not matter)
+2. Loop over nums once again, but this time we use to hashtable to check if the corresponding answer exist, which is O(1).
+
+"""
