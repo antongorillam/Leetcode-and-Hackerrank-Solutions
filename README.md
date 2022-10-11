@@ -32,4 +32,10 @@ Idea: Since we want to find the shortest height, *bfs* (breath-first-search) mak
 
 Time complexity: $\mathcal{O}(|V|)$
 
+### 111 Maximum Depth of Binary Tree
+
+[Problem link](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+
+Idea: Regular DFS. Call the function recusively for each child, and return the max height.
+
 ## Hackerrank solutions
