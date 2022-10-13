@@ -38,5 +38,19 @@ Idea: Since we want to find the shortest height, *bfs* (breath-first-search) mak
 
 Time complexity: $\mathcal{O}(|V|)$
 
+### 206 Reverse Linked List
+
+[Problem link](https://leetcode.com/problems/reverse-linked-list/)
+
+Idea: Loop through LL and direct pointer to the previous node.
+
+Hardest part is the order:
+
+1. Save the coming node
+2. Redirect the current node pointer to the previous node
+3. Move previous node to the current node
+4. Move current node to the next node
+
+If done right, no edge cases need to be added.
 
 ## Hackerrank solutions
