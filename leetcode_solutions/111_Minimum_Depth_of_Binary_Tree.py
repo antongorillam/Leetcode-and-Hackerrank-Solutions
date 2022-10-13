@@ -25,7 +25,7 @@ class Solution:
                 queue.append((r_node, current_height+1))
 
 """
-Problem link : https://leetcode.com/problems/minimum-depth-of-binary-tree/
+Problem link: https://leetcode.com/problems/reverse-linked-list/
 
 Idea: Since we want to find the shortest height, bfs (breath-first-search) makes most sense, since it will check each "level" at a time.
 
