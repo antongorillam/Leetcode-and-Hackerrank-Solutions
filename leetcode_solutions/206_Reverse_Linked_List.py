@@ -16,6 +16,8 @@ class Solution:
         return prev
 
 """
+Problem link: https://leetcode.com/problems/reverse-linked-list/
+
 Idea: Loop through LL and direct pointer to the previous node
 
 Hardest part is the order:
