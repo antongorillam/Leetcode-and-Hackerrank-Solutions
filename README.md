@@ -15,6 +15,16 @@
 
 Furthermore will use hashtable linking each roman symbol to its value to make the code shorter.
 
+### 020. [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+
+**Idea**: Beacause we need to preserve the order, a stack should be used.As soon as I realized that, the task becomes easy. There are x cases where it should fail:
+
+- The closing bracket and the last element does not match.
+- The stack is empty when encountering a opening bracket.
+- The stack is not empty when we reach the end of the string.
+
+**Personal Note**: The performance should in theory improve (a tiny bit) if we instead use *hashmaps* to check for the bracket. Try if you want!
+
 ### 024. [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
 
 **Idea**: Always look at 2 node at a time.
@@ -34,10 +44,9 @@ Furthermore will use hashtable linking each roman symbol to its value to make th
 1. Create a queue and proceed with a normal bfs, with only difference is that we track which heigh each node is on.
 2. As soon as booth we find a leaf node (both children are `None`) then we know we have found the lowest height.
 
-Time complexity: $\mathcal{O}(|V|)$
+**Time complexity**: $\mathcal{O}(|V|)$
 
 ### 206. [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
-
 
 **Idea**: Loop through LL and direct pointer to the previous node.
 
