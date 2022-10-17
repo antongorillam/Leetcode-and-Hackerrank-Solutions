@@ -1,6 +1,6 @@
 # Leetcode-and-Hackerrank-Solutions
 
-## Leetcode solutions
+## Leetcode Solutions Notes
 
 ### 001. [Two Sum](https://leetcode.com/problems/two-sum/)
 
