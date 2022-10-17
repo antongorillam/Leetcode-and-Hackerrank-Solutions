@@ -25,11 +25,30 @@ Furthermore will use hashtable linking each roman symbol to its value to make th
 
 **Personal Note**: The performance should in theory improve (a tiny bit) if we instead use *hashmaps* to check for the bracket. Try if you want!
 
+**Time Complexity**: $\mathcal{O}(n)$
+
 ### 024. [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
 
 **Idea**: Always look at 2 node at a time.
 
 **Personal Note**: Problem gets quite easy once I realized that I only need to look at 2 node each time (think of a sliding window of 2)
+
+### 066. [Plus One](https://leetcode.com/problems/plus-one/)
+
+Idea: While looping throught the list from reverse, there are only 3 cases:
+
+- Case 1: We are on the "last" digit (eg. index=0) and its a 9. We therefore need to extend the list with 1 more position.
+- Case 2: The digit is a 9, thus we need a carry over (eg. the loops continues).
+- Case 3: If the number is not a 9, then just add 1 and break the loop.
+
+**Personal Note**: Good to always remember that the way to loop through a list in reverse in python (with indexing) is:
+
+```python
+for i in range(len(list)-1, -1, -1):
+    pass
+```
+
+**Time Complexity**: $\mathcal{O}(n)$
 
 ### 101 Symmetric Tree
 
@@ -44,7 +63,7 @@ Furthermore will use hashtable linking each roman symbol to its value to make th
 1. Create a queue and proceed with a normal bfs, with only difference is that we track which heigh each node is on.
 2. As soon as booth we find a leaf node (both children are `None`) then we know we have found the lowest height.
 
-**Time complexity**: $\mathcal{O}(|V|)$
+**Time Complexity**: $\mathcal{O}(|V|)$
 
 ### 206. [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
 
