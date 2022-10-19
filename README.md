@@ -1,4 +1,4 @@
-# Leetcode-and-Hackerrank-Solutions
+    # Leetcode-and-Hackerrank-Solutions
 
 ## Leetcode Solutions Notes
 
@@ -64,6 +64,19 @@ for i in range(len(list)-1, -1, -1):
 2. As soon as booth we find a leaf node (both children are `None`) then we know we have found the lowest height.
 
 **Time Complexity**: $\mathcal{O}(|V|)$
+
+### 205. [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)
+
+**Idea**: We can transform a string to a list, eg. f("*egg*") = "011". The number in the string is arbitrary, as long as it preserves the its structure. The function can be implemented with a hashfunction and works basically like this:
+    - Loop through the string.
+    - If the character haven't been seen previously (eg. not in hashmap), add it, with a arbitrary number.
+    - If the character exist, assign the number its corresponding to it.
+
+With this algorithm, f("*egg*") = f("*add*") = "011"
+
+**Time Complexity**: $\mathcal{O}(n)$
+
+**Space Complexity**: $\mathcal{O}(n)$
 
 ### 206. [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
 
