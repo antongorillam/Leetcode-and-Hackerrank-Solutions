@@ -27,6 +27,15 @@ Furthermore will use hashtable linking each roman symbol to its value to make th
 
 **Time Complexity**: $\mathcal{O}(n)$
 
+
+### 021. [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+
+**Idea**: Use a dummy node.
+
+**Personal Note**: Had quite a hard time with this one, but when I got the idea to create a dummy node, then its quite straight forward.Furthermore, there's quite many edge cases if porly designed
+
+**Improvements**: Perhaps rewrite loop so that last if statements would  be needed.
+
 ### 024. [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
 
 **Idea**: Always look at 2 node at a time.
