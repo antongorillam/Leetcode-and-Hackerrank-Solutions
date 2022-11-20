@@ -74,6 +74,19 @@ for i in range(len(list)-1, -1, -1):
 
 **Time Complexity**: $\mathcal{O}(|V|)$
 
+### 142. [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
+
+**Idea**:
+
+- Hash every node.
+- If we have seen a node before, it is a loop, return it.
+
+**Time Complexity**: $\mathcal{O}(n)$
+
+**Space Complexity**: $\mathcal{O}(n)$
+
+**Improvement**: We can get it the space complexity to $\mathcal{O}(1)$ if we use 2 pointers, a *slow*- and a *fast* pointer. It is a but theoretical though.
+
 ### 205. [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)
 
 **Idea**: We can transform a string to a list, eg. f("*egg*") = "011". The number in the string is arbitrary, as long as it preserves the its structure. The function can be implemented with a hashfunction and works basically like this:
@@ -99,5 +112,26 @@ Hardest part is the order:
 4. Move current node to the next node
 
 If done right, no edge cases need to be added.
+
+### 409. [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)
+
+**Idea**:
+
+Understand a couple of things:
+- If a character occurs an even number of time -> we can always build a palidrome
+- There can only be one oddly numbered characters in a palidrome. If     there's more we have to remove a character to make it even.
+- The length of longest palidrome is the length of the string, subtracting the number of characters from the oddly numbered characters to make a palidrome, eg. *len(s) - oddly_numbered_char + 1*
+
+**Time-complexity**: $\mathcal{O}(n)$
+
+**Space-complexity**: $\mathcal{O}(n)$
+
+### 876. [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
+
+**Idea**: This one was quite simple, just loop through list and use counter, then go to the middle
+
+**Time-complexity**: $\mathcal{O}(n)$
+
+**Space-complexity**: $\mathcal{O}(1)$
 
 ## Hackerrank solutions
